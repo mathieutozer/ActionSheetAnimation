@@ -3,7 +3,6 @@
 //  ActionSheetAnimation
 //
 //  Created by Mathieu Tozer on 11/23/15.
-//  Copyright © 2015 Tozer. All rights reserved.
 //
 
 import UIKit
@@ -18,7 +17,6 @@ class ViewController: UIViewController {
   var initialSpringVelocity: CGFloat
   let sheetHeight = 400.0 as CGFloat;
 
-  
   @IBOutlet var durationSlider: UISlider?
   @IBOutlet var springDampingSlider: UISlider?
   @IBOutlet var initialSpringVelocitySlider: UISlider?
@@ -32,7 +30,6 @@ class ViewController: UIViewController {
     sheet.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "sheetTapped:"))
     sheet.backgroundColor = UIColor.grayColor()
     view.addSubview(sheet)
-    // Do any additional setup after loading the view, typically from a nib.
   }
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
@@ -52,7 +49,6 @@ class ViewController: UIViewController {
     self.initialSpringVelocity = 0;
 
     super.init(coder: aDecoder)
-//      fatalError("init(coder:) has not been implemented")
   }
   
   func openSheetFrame(bounds: CGRect) -> CGRect {
@@ -112,14 +108,7 @@ class ViewController: UIViewController {
     } else {
       sender.setTitle("Open Sheet", forState: UIControlState.Normal)
     }
-    
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
 
 }
 

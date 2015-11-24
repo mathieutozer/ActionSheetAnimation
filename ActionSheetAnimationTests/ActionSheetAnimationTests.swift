@@ -3,7 +3,6 @@
 //  ActionSheetAnimationTests
 //
 //  Created by Mathieu Tozer on 11/23/15.
-//  Copyright © 2015 Tozer. All rights reserved.
 //
 
 import XCTest
